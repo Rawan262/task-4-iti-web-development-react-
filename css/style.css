@@ -28,7 +28,7 @@
 
         /* Hero Image */
         .hero {
-            background-image: url('images/pizza.jpg');
+            background-image: url('../images/pizza.jpg');
             height: 300px;
             background-size: cover;
             background-position: center;
