@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <a href="#">Main</a>
+            <a href="#">Make an order</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Image -->
+    <div class="hero">
+        Welcome to Black Goose Bistro 
+    </div>
+
+    <main>
+            <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+            <p class="p-main">Build your custom pizza and we'll deliver it within an hour!</p>
+
+        <!-- Form -->
+        <form>
+        <!-- User Info -->
+            <fieldset>
+                <legend>Your Information</legend>
+                    <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="add">Address</label></td>
+                        <td><input type="text" id="add" name="add"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telephone</label></td>
+                        <td><input type="tel" id="tel" name="tel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="inst">Delivery Instructions</label><br>
+                        <textarea id="inst" name="inst" rows="4" cols="40" placeholder="No more than 400 characters..."></textarea>
+                    </td>
+                    </tr>
+                    </table>
+        </fieldset>
+        <!-- Pizza Menu Section -->
+        <section class="menu-section">
+            <h2>Our Pizza </h2>
+                <div class="menu-grid">
+                    <div class="pizza-card">
+                    <img src="images/Pizza1.jpg" alt="Classic Pizza">
+                    <h4>Classic Margherita</h4>
+                    <p>Fresh tomato sauce, mozzarella, basil leaves.</p>
+                    </div>
+                    <div class="pizza-card">
+                    <img src="images/pizza2.jpg" alt="Pepperoni">
+                    <h4>Pepperoni</h4>
+                    <p>Loaded with pepperoni and melted cheese.</p>
+                    </div>
+                    <div class="pizza-card">
+                    <img src="images/pizza3.jpg" alt="Veggie">
+                    <h4>Veggie Delight</h4>
+                    <p>Colorful veggies, cheese & herbs on whole-grain crust.</p>
+                </div>
+        </div>
+        </section>
+
+        <!-- Pizza Design -->
+        <h2>Design Your Dream Pizza:</h2>
+        <fieldset>
+                <legend>Pizza Specs</legend>
+
+            <fieldset>
+                <legend>Crust (Choose one):</legend>
+                <input type="radio" id="classic" name="crust" value="Classic">
+                <label for="classic">Classic White</label><br>
+                <input type="radio" id="multigrain" name="crust" value="Multigrain">
+                <label for="multigrain">Multigrain</label><br>
+                <input type="radio" id="stuffed" name="crust" value="Stuffed">
+                <label for="stuffed">Cheese-stuffed crust</label><br>
+                <input type="radio" id="gluten" name="crust" value="Gluten-free">
+                <label for="gluten">Gluten-free</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Toppings (Choose as many as you want):</legend>
+                <input type="checkbox" id="red" name="toppings" value="Red Sauce">
+                <label for="red">Red Sauce</label><br>
+                <input type="checkbox" id="white" name="toppings" value="White Sauce">
+                <label for="white">White Sauce</label><br>
+                <input type="checkbox" id="mozz" name="toppings" value="Mozzarella">
+                <label for="mozz">Mozzarella Cheese</label><br>
+                <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+                <label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox" id="mush" name="toppings" value="Mushrooms">
+                <label for="mush">Mushrooms</label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Number</legend>
+            <label for="count">How many pizzas</label>
+            <input type="number" id="count" name="count" min="0">
+            </fieldset>
+        </fieldset>
+
+        <button type="submit">Bring me a pizza!</button>
+        <button type="reset">Reset</button>
+        </form>
+    </main>
+    </body>
+    </html>
